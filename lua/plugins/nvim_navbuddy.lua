@@ -10,5 +10,9 @@ return {
             opts = { lsp = { auto_attach = true } }
         }
     },
-    -- your lsp config or other stuff
+config = function ()
+        require("nvim-navbuddy").setup({})
+	
+	
+end   
 }
