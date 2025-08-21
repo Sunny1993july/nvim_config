@@ -44,4 +44,4 @@ vim.keymap.set('n', '<F5>', ':ToggleTerm <CR>')
 
 -- nvim Navbuddy
 vim.keymap.set('n', '<F4>', ':Navbuddy <CR>')
-vim.keymap.set('n', '<F1>', ':Flote <CR>')
+vim.keymap.set('n', '<F9>', ':Flote <CR>')
