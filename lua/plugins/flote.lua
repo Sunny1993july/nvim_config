@@ -17,14 +17,13 @@ require('flote').setup{
             local base_name = vim.fs.basename(cwd)	  
             local parent_base_name = vim.fs.basename(vim.fs.dirname(cwd))
 	    local parent_base_name_formated = string.gsub(base_name, "%.", "")
-            local file_name =  parent_base_name_formated .. '_' .. base_name .. '_' .. os.date("%Y%m%d") .. '.md'
+            local file_name =  parent_base_name_formated .. '_' .. base_name .. '.md'
 	   	    return file_name
-	    end
-    }
-
-}
+				end
+    },
+	     }
 local notes_dir =  '/home/kamaljeet-singh/Desktop/Notes'
-vim.api.nvim_create_autocmd('BufWritePost', {
+		vim.api.nvim_create_autocmd('BufWritePost', {
 			pattern = notes_dir .. '/*.md',
 			callback = function()
 				local current_buf_path = vim.api.nvim_buf_get_name(0)

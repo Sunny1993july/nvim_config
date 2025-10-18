@@ -37,7 +37,7 @@ config= function()
         -- miscs = {}, -- Uncomment to turn off hard-coded styles
     },
     color_overrides = { mocha = {
-      rosewater = "#f5e0dc",
+    rosewater = "#f5e0dc",
     flamingo = "#efd2b3",
     pink = "#d8cbff",
     mauve = "#cda5fc",
